@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./scss/mains.scss"
+import "./scss/mains.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
