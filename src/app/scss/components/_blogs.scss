@@ -1,0 +1,97 @@
+@mixin text-center {
+  padding: 0.5rem 0rem;
+  display: block;
+  text-align: center;
+}
+.blogs {
+  margin-top: 5rem;
+  gap: 2rem;
+  flex-direction: column;
+  &__textcontent {
+    width: 50%;
+    &-title {
+      color: $greenvariantsecondary;
+      @include text-center();
+    }
+    &-heading {
+      h1 {
+        @include text-center();
+      }
+    }
+    &-para {
+      p {
+        @include text-center();
+        color: $subtextcolor;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    &-cards {
+      width: 20rem;
+      &--desc {
+        display: flex;
+        flex-direction: column;
+        p{
+          padding: 0.75rem 0rem;
+          color: $buttondropdown;
+        }
+      }
+      &--img {
+        height: auto;
+        .img { 
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .blogs {
+    &__textcontent {
+      width: 100%;
+      &-title {
+        color: $greenvariantsecondary;
+        @include text-center();
+      }
+      &-heading {
+        h1 {
+          @include text-center();
+        }
+      }
+      &-para {
+        p {
+          @include text-center();
+          color: $subtextcolor;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 647px) {
+  .blogs {
+    &__textcontent {
+      width: 100%;
+      &-title {
+        color: $greenvariantsecondary;
+        @include text-center();
+      }
+      &-heading {
+        h1 {
+          @include text-center();
+        }
+      }
+      &-para {
+        p {
+          @include text-center();
+          color: $subtextcolor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../Partials/alignment";
+
+//    flex(
+//   $display: flex,
+//   $justify-content: center,
+//   $align-items: center
+// ) {
+//   display: $display;
+//   justify-content: $justify-content;
+//   align-items: $align-items;
+// }
+
+.flex-center {
+  @include flex();
+}
+.flex-left {
+  @include flex($justify-content: flex-start, $align-items: flex-start);
+}
+.flex-right {
+  @include flex($justify-content: flex-end, $align-items: flex-end);
+}
+.space-between {
+  @include flex($justify-content: space-between, $align-items: center);
+}
+.justify-around {
+  @include flex($justify-content: space-around, $align-items: center);
+}
+.justify-between {
+  @include flex($justify-content: space-between, $align-items: center);
+}
+.gap--2 {
+  @include gap($gap: 1.25rem);
+}
+.gap--4 {
+  @include gap($gap: 3rem);
+}
+.gap--6 {
+  @include gap($gap: 4rem);
+}
+.p--2 {
+  @include p($padding: 0.85rem);
+}
+.p--4 {
+  @include p($padding: 2rem);
+}
+.p--6 {
+  @include p($padding: 3rem);
+}

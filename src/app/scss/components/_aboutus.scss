@@ -1,0 +1,73 @@
+@import "../variables/variables.scss";
+
+@mixin title-wrapper {
+  .parent-wrapper {
+    .content-wrapper {
+      padding: 0rem 0rem;
+    }
+  }
+}
+.parent-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  .content-wrapper {
+    padding: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .title-wrapper {
+      h1 {
+        font-size: xx-large;
+        line-height: 2.5rem;
+      }
+      p {
+        color: $greenvariantsecondary;
+      }
+    }
+  }
+
+  .number-counter {
+    display: flex;
+    padding: 0rem 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .read-more {
+    padding: 0rem 5rem;
+    p {
+      color: $primarycolor;
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: $primaryfont;
+      font-size: small;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  @include title-wrapper();
+  .paragraphs-wrapper {
+    display: none;
+  }
+  .parent-wrapper {
+    .number-counter {
+      padding: 0rem 0rem;
+    }
+    .read-more {
+      padding: 0rem 0rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 647px) {
+  @include title-wrapper();
+  .paragraphs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .number-counter {
+    flex-wrap: wrap;
+  }
+}

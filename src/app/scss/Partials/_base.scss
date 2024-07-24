@@ -1,0 +1,37 @@
+%font-family {
+  font-family: $secondarycolorfont;
+}
+%font-family-primary {
+  font-family: $primaryfont;
+}
+h1 {
+  @extend %font-family;
+  font-weight: $primaryfontweight;
+  line-height: $lineheightextralarge;
+  text-align: left;
+}
+h2 {
+  @extend %font-family;
+  font-weight: $primaryfontweight;
+}
+h3 {
+  @extend %font-family;
+  font-weight: $mediumfontweight;
+  line-height: $lineheightlarge;
+}
+h5 {
+  @extend %font-family;
+  font-weight: $primaryfontweight;
+  line-height: $lineheightsmall;
+}
+p {
+  @extend %font-family-primary; //Primary fontweight
+  font-weight: $mediumfontweight;
+  line-height: $lineheightsmall;
+  color: $subtextcolor;
+}
+li {
+  @extend %font-family;
+  font-weight: $largefontweight;
+  color:$subtextcolor;
+}

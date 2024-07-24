@@ -1,0 +1,85 @@
+%initial {
+  width: 5rem;
+  overflow: hidden;
+  transition: width 0.2s;
+  border-radius: 1.2rem;
+  img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    width: inherit;
+  }
+}
+
+.wrapperimg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+  .empty__area {
+    @extend %initial;
+  }
+  .green_img {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    bottom: 9.2rem;
+    left: 3.5rem;
+    z-index: 4444;
+    transition: 0.2s ;
+  }
+  
+  &:hover {
+    .width-1 {
+      width: 3rem;
+      img {
+        width: inherit;
+      }
+    }
+    .width-2 {
+      width: 7rem;
+      img {
+        width: inherit;
+      }
+    }
+    .rotate {
+      rotate: 45deg;
+    }
+    .green_img {
+      bottom: 7.1rem;
+      left: 1.34rem;
+      width: 15%;
+      height: 15%;
+      rotate: 56deg; 
+    }
+  }
+  .img__wrapper {
+    display: flex;
+    overflow: hidden;
+    gap: 0.7rem;
+    height: 5rem;
+  }
+  .width-1 {
+    @extend %initial;
+  }
+  .width-2 {
+    @extend %initial;
+  }
+  .img__wrapper2 {
+    display: flex;
+    overflow: hidden;
+    gap: 0.7rem;
+    height: 5rem;
+    .someclass {
+      @extend %initial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .rotate {
+        width: 80%;
+        height: 80%;
+        transition: rotate 0.2s;
+      }
+    }
+  }
+}

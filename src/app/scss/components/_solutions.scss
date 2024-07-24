@@ -1,0 +1,124 @@
+.solutions {
+  display: flex;
+  margin: 5rem 0rem;
+  gap: 2rem;
+  flex-direction: column;
+  &__textwrapper {
+    &--text {
+      h1 {
+        text-align: center;
+      }
+      p {
+        font-size: smaller;
+        color: $greenvariantsecondary;
+      }
+      width: 20%;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+
+.solutions__analytics {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0rem 5rem;
+  &-inner {
+    margin-top: 2rem;
+    border-top: 1px solid $btnbordertransparent;
+    width: 20%;
+    &--logo {
+      padding: 2rem 0rem 6rem 0rem;
+      .img {
+        width: 4rem;
+      }
+    }
+    &--text {
+      h1 {
+        line-height: 2.5rem;
+      }
+      p {
+        color: $subtextcolor;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .solutions {
+    &__textwrapper {
+      &--text {
+        h1 {
+          text-align: center;
+        }
+        p {
+          font-size: smaller;
+          color: $greenvariantsecondary;
+        }
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+  .solutions__analytics {
+    display: flex;
+    padding: 0rem 0rem;
+    &-inner {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      &--logo {
+        padding: 2rem 0rem 6rem 0rem;
+        .img {
+          width: 4rem;
+        }
+      }
+      &--text {
+        h1 {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 647px) {
+  .solutions {
+    &__textwrapper {
+      &--text {
+        h1 {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+        p {
+          font-size: smaller;
+          color: $greenvariantsecondary;
+        }
+        width: 70%;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+  .solutions__analytics {
+    display: flex;
+    padding: 0rem 0rem;
+    &-inner {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      &--logo {
+        padding: 2rem 0rem 6rem 0rem;
+        .img {
+          width: 4rem;
+        }
+      }
+      &--text {
+        h1 {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}

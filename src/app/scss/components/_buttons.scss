@@ -1,0 +1,39 @@
+@import "../variables/variables.scss";
+@import "../Partials/typography.scss";
+%btn--props {
+  padding: 0.85rem 2rem;
+  border-color: transparent;
+  border-radius: 0.9rem;
+}
+
+%btn--transparent-background {
+  background-color: transparent;
+}
+.btn--green {
+  @extend %btn--props;
+  @include btn--green();
+  background-color: $primarycolor;
+  &:hover {
+    cursor: pointer;
+    background-color: $primarycolorvariant;
+  }
+}
+
+.btn--transparent {
+  @extend %btn--props;
+  @include btn--green($font-color: $primarycolor);
+  @extend %btn--transparent-background;
+  border: 2px solid $greenvariant;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btn--transparent-black {
+  @extend %btn--props;
+  @extend %btn--transparent-background;
+  @include btn--green($font-color: $btntransparentblack);
+  border: 2px solid $btnbordertransparent;
+  &:hover {
+    cursor: pointer;
+  }
+}

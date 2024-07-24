@@ -1,0 +1,56 @@
+// Desktop Screen
+.navbar {
+  margin: 0.75rem auto;
+  &__initial {
+    &--img {
+      width: auto;
+    }
+    ul {
+      list-style: none; 
+      .lists {
+        padding: 2rem 0rem;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+  }
+  .btn__menu--toggle {
+    display: none;
+  }
+}
+
+// Tablet Screen
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    ul {
+      display: none;
+    }
+    .btn__menu--toggle {
+      display: flex;
+      width: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+// Mobile Screen
+
+@media only screen and (max-width: 647px) {
+  .navbar {
+    ul {
+      display: none;
+    }
+    .btn--transparent {
+      display: none;
+    }
+    .btn--green {
+      display: none;
+    }
+    .btn__menu--toggle {
+      display: flex;
+      width: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

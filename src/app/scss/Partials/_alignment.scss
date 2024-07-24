@@ -1,0 +1,14 @@
+@mixin flex($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin gap($gap: 0rem) {
+  gap: $gap;
+}
+@mixin p($padding: 0rem) {
+  padding: $padding;
+}
+@mixin m($margin: 0rem) {
+  margin: $margin;
+}

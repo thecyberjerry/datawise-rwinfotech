@@ -1,0 +1,17 @@
+.slider {
+  margin: 6rem;
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .slider {
+    margin: 2rem;
+  }
+}
+@media only screen and (max-width: 647px) {
+  .slider {
+    margin: 2rem;
+  }
+}
