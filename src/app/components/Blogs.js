@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Blogs({ content }) {
   return (
-    <div className="container blogs flex-center">
+    <div className="blogs flex-center">
       {content &&
         content.map((item, index) => {
           return (

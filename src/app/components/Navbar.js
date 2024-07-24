@@ -12,8 +12,8 @@ export default function Navbar({ data, btn }) {
   const router = useRouter();
   return (
     <>
-      <nav className="container space-between navbar">
-        <div className="navbar__initial flex-center gap--6">
+      <nav className="space-between navbar ">
+        <div className="navbar__initial  flex-center gap--6">
           <Image
             alt="Logo Datawise"
             className="navbar__initial--img"

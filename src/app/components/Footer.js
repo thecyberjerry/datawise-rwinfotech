@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer({ footer }) {
   return (
-    <div className="container">
+    <div className="">
       <div className="footer">
         <div className="footer__upper-section">
           <Image

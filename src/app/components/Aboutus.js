@@ -6,7 +6,7 @@ export default function Aboutus({ aboutus }) {
       {aboutus &&
         aboutus.map((item, index) => {
           return (
-            <div key={index} className="container parent-wrapper">
+            <div key={index} className=" parent-wrapper">
               <div className="content-wrapper">
                 <div className="title-wrapper">
                   <p>{item.title}</p>

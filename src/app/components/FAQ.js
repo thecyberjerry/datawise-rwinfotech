@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ({ faq }) {
   return (
-    <div className="container faq">
+    <div className=" faq">
       {faq &&
         faq.map((item, index) => {
           return (

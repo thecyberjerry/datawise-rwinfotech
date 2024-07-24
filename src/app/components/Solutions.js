@@ -7,7 +7,7 @@ export default function Solutions({ solutions }) {
       {solutions &&
         solutions.map((item, index) => {
           return (
-            <div key={index} className="solutions container">
+            <div key={index} className="solutions">
               <div className="solutions__textwrapper flex-center">
                 <div className="solutions__textwrapper--text">
                   <p>{item.title}</p>

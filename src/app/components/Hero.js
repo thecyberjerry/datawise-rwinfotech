@@ -4,7 +4,7 @@ import Group from "./group/Group";
 
 export default function Hero({ hero, group }) {
   return (
-    <div className="hero gap--4  ">
+    <div className="hero gap--4">
       <div className="wrapper hero--content gap--2">
         <div className="hero--content-heading">
           <h1>{hero?.heading}</h1>
